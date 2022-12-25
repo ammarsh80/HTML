@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <form nom="vente de t-shirt" method="post">
+                <fieldset>
+                    <legend><i>Client</i></legend>
+                    <div>
+                        <label for="name">Nom et prénom : </label>
+                        <input type="text" name="name" id="nom" placeholder="Nom et prénom" required
+                            pattern="^([A-Z]+)\s([A-Z]{1}[a-z]+)$" />
+
+                    </div> <label for="adresse">Adresse : </label>
+                    <input type="text" name="adresse" id="adresse" />
+                    <div>
+                        <label for="codepostal">Code Postal : </label>
+                        <input name="codepostal" type="text" id="codepostal" size="5"
+                            pattern="^[0-9]{5}$|^[2]{1}[A]{1}[0-9]{3}$" />
+                        <div>
+                            <label for=pays>Pays : </label>
+                            <input id=pays name="pays" type="text" value="France" readonly="France">
+                </fieldset>
+        </div>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend><i>Commande</i></legend>
+                <div>
+                    <label for=model>Modèle : </label>
+                    <input id=model name="model" value="Road 66" readonly="Road 66">
+                </div>
+                <label for=taille>Taille : </label>
+                <div>
+                    <input type="range" name="taille" min="0" max="4" />
+                    <p>
+                        <span>S</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>M</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>L</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>XL</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                </div>
+                <div>
+                    <label for=quantité>Quantité : </label>
+                    <input type="number" min="1" value="1" max="165" step="3" />
+                </div>
+        </div>
+        <br>
+        <div>
+            <input type="button" name="commander" value="Commander">
+            <input type="button" name="recommencer" value="Recommencer">
+            <p>
+                <input type="submit" name="envoyer" value="Enoyer">
+                <!--Pour envoyer -->
+            </p>
+        </div>
+        </form>
+        </div>
+    </main>
+</body>
+
+</html>

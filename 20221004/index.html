@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Mon cours HTML</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .fond-gris {
+            background-color: #eee;
+        }
+
+        .fond-rouge {
+            background-color: red;
+        }
+
+        .bordure-droite {
+            border-left: 5px solid rgb(26, 201, 26);
+            padding-left: 10px;
+        }
+        body {
+            background-image: url("clouds.jpg" );
+            }   
+             </style>
+
+</head>
+
+<body>
+    <p>
+    <h1><b><i><u>Bonjour et bienvenue sur mon site</u></i></b></h1>
+    <a href="#ancre1">Les listes de définitions</a> </br>
+<a href="dossier1/page1.html#ancre2">ici ancre2</a>
+    <hr> <!-- pour inserer une ligne-->
+
+    </hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, harum? Voluptates ab rem dicta possimus vero
+    ducimus quos odio soluta?
+    </p>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores laboriosam hic consequuntur.
+        Officia tenetur similique facere ratione, sed repellat quia recusandae voluptas officiis hic.
+    </p>
+
+    <blockquote>
+        <!---Pour inserer une citation-->
+        <p>
+            <i>La chance est un hasard, le bonheur une vocation.</i>
+        </p>
+        <p>- Alexandru Vlahuta</p>
+    </blockquote>
+    <!----Tres important Documentation de MDN : https://developer.mozilla.org/fr/docs/Web/HTML/Element/blockquote-->
+    <pre> <!----Pour afficher le texte tel qu'il est -->
+    Le texte inclus dans une balise pre est affiché dans une police à pas fixe 
+et préserve
+    les 
+    espaces
+Ainsi que les passages à la ligne.
+    </pre>
+
+    <ol>
+        <!---liste ordonnee-->
+        <li>Chapitre1</li>
+        <li>Chapitre2</li>
+        <li>Chapitre3</li>
+        <li>Chapitre4</li>
+    </ol>
+
+    </ul>
+    <!----liste à puces (non ordonnee)-->
+    <li>Chapitre1</li>
+    <li>Chapitre2</li>
+    <li>Chapitre3</li>
+    <li>Chapitre4</li>
+    <ul>
+        <!---On peut faire des listes imbriquees-->
+        <p> Les listes imbriquées
+        <ol>
+            <li>fvsdg</li>
+            <li>bhtrf</li>
+            <li>
+                <ul>
+                    <li>bvdfgb</li>
+                    <li>bdf</li>
+                    <li>gh</li>
+                </ul>
+            </li>
+            <li>bdb</li>
+            <li>hfh</li>
+        </ol>
+        </p>
+<a id="ancre1"></a>
+        <p>Les listes de définitions
+        <dl>
+            <!---pour présenter, par exemple, des glossaires-->
+            <dt>Terme 1</dt>
+            <dd>Definition 1</dd>
+            <dt>Terme 2</dt>
+            <dd>Definition 2</dd>
+            <dt>Terme 3</dt>
+            <dd>Definition 3</dd>
+        </dl>
+        </p>
+        <p>Aenean lacinia...</p>
+        <p class="fond-rouge bordure-droite">Hello</p>
+        <p class="bordure-droite">Bienvenue</p>
+        <a href="https://www.researchgate.net/">Lien vers mon site perso !</a> </br>
+        <!---hreflang pour -->
+        <!----ping pour inserer plusieurs url séparés avec une espace-->
+        <a href="dossier1/page1.html">lien vers la page1</a> </br>
+        <!---avec href on peut envoyer vers un url ou une page en donnant le nom de la page-->
+<a href="https://www.w3.org/standards/index.htm">liens vers un site</a> </br>
+<a href="MonCV.pdf">Mon CV version pdf</a> </br>
+<p>vers <a href="dossier1/page1.html" target="_blank">page1</a>
+    <img src="clouds.jpg" width="200" height="200" alt="Clouds">
+
+    <img src="https://img.freepik.com/photos-gratuite/pin-calanque_268835-3237.jpg?w=1060&t=st=1664887551~exp=1664888151~hmac=20c9cd4776a3d2e93dd78809848bc3f96244390ca2daa7ba1d821856980ecab5">
+<a href="dossier1/page1">
+    <img src="clouds.jpg">
+
+</a>
+</p>
+    </body>
+
+</html>

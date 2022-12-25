@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:valid {
+            background-color: green;
+        }
+
+        input:invalid {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <label for="email">Email</label>
+            <input type="email" nom="email" id="email" pattern=".*@needemand\.com" required><br>
+            <label for="password">Password</label>
+            <input type="password" nom="password" id="password" pattern="^(?=.*\d)(?=.*\W)(?=.*[a-zA-Z]).{6,8}$"
+                required>
+            <br>
+            <input type="submit" value="C'est partie">
+            <input type="reset" value="Recommencer">
+        </form>
+    </main>
+</body>
+
+</html>

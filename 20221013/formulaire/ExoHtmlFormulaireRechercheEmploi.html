@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <div>
+                    <label for="nom" name="nom" id="nom">Nom&emsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="nom" id="nom" size="10">
+                </div>
+                <br>
+
+                <div>
+                    <label for="prenom" name="prenom" id="prenom">Prénom &nbsp;</label>
+                    <input type="text" name="prenom" id="prenom" size="10">
+                </div>
+                <br>
+
+                <div>
+                    <label for="email" name="email" id="email">e-mail&emsp;</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+<br>
+                <div>
+                    Sex:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="sex" id="sex">
+                    <label for="sex" name="sex" id="sex">M</label>
+
+                    <input type="radio" name="sex" id="sex">
+                    <label for="sex" name="sex" id="sex">F</label>
+                </div>
+                <br>
+                <div>
+                    <label for="photo" name="photo" id="photo">Envoyer votre photo (.JPEG ou PNG)</label>
+                    <input type="file" name="photo" id="photo" accept=".JPEG, .PNG" />
+                </div>
+<br>
+                <div>
+                    <label for="pays">Vous habitez en ?</label><br />
+                    <select name="pays" id="pays">
+                        <option value="france">FRANCE</option>
+                        <option value="angletaire">ANGLETERRE</option>
+                        <option value="allemagne">ALLEMAGNE</option>
+                        <option value="italie">ITALIE</option>
+                        <option value="suisse">SUISSE</option>
+                        <option value="espagne">ESPAGNE</option>
+                    </select>
+                </div>
+<br>
+                <div>
+                    <label for="langue">Quelle langue parlez-vous ? :</label>
+                    <br>
+                    <input type="checkbox" /> <label for="langue">Français</label><br>
+                    <input type="checkbox" /> <label for="langue">Anglais</label><br>
+                    <input type="checkbox" /> <label for="langue">Allemand</label><br>
+                    <input type="checkbox" /> <label for="langue">Italien</label><br>
+                    <input type="checkbox" /> <label for="langue">Romanche</label><br>
+                    <input type="checkbox" /> <label for="langue">Espagnol</label>
+
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Soumettre">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

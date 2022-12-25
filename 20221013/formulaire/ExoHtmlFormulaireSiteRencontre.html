@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <form nom="rencontre" method="post">
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" min="2" maxlength="45" pattern="^[A-B]{45}$">
+                <div>
+                    <label for="nom">Prenom : </label>
+                    <input type="text" min="2" maxlength="45" pattern="^[A-B]{45}$">
+                </div>
+                <div>
+                    <label for="mail">e-mail :</label>
+                    <input type="email" name="mail" id="mail" checked
+                        pattern="^.+@([a-z-])+([\.com|\.fr|\.org|\.net])+$">
+                </div>
+                <br>
+                <div>
+                    Quel est votre sex : <br>
+                    <input type="radio" name="sex" id="f" checked />
+                    <label for="f">féminin</label>
+                    <input type="radio" name="sex" value="sexM" id="m" />
+                    <label for="sex">masculin</label>
+                </div>
+                <div>
+                    <label for="sex">Envoyer une photo : </label>
+                    <input type="file" name="photo" value="photo" id="photo" accept=".jpeg, .png" />
+
+                </div>
+
+                <div>
+                    <label for="pays">Vous habitez en ?</label><br />
+                    <select name="pays" id="pays">
+                        <!-- creer une liste deroulante (pour prechoisir: selected)-->
+                        <option value="france">FRANCE</option>
+                        <option value="angletaire">ANGLETERRE</option>
+                        <option value="allemagne" selected>ALLEMAGNE</option>
+                        <option value="italie">ITALIE</option>
+                        <option value="suisse">SUISSE</option>
+                        <option value="espagne">ESPAGNE</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pays">Quelle langue parlez-vous ? : </label><br />
+                    <select name="pays" id="pays">
+                        <!-- creer une liste deroulante (pour prechoisir: selected)-->
+                        <option value="francais">Français</option>
+                        <option value="anglais">Anglais</option>
+                        <option value="allemand">Allemand</option>
+                        <option value="italien">Italien</option>
+                        <option value="romanche">Romanche</option>
+                        <option value="espagnole">Espagnol</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="meteir">Quel est votre domaine d'activité : </label>
+                    <br>
+                    <input type="checkbox" /> <label for="meteir">Plombier</label><br>
+                    <input type="checkbox" /> <label for="meteir">Electricien</label><br>
+                    <input type="checkbox" /> <label for="meteir">Maçon</label><br>
+                    <input type="checkbox" /> <label for="meteir">Carreleur</label><br>
+                    <input type="checkbox" /> <label for="meteir">Menuisier</label><br>
+                    <input type="checkbox" /> <label for="meteir">Couvreur</label>
+
+                </div>
+                <p>
+                    <input type="submit" value="Enoyer">
+                    <!--Pour envoyer -->
+                </p>
+        </div>
+        </form>
+        </div>
+    </main>
+</body>
+
+</html>

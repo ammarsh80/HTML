@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Formulaire</h1>
+            <h2>Contactez nous</h2>
+            <form action="" name="ContactUs">
+                <p>
+                    Sex:
+                    <input type="radio" value="Femme">
+                    <label for="sex"> Femme </label>
+                    <input type="radio" value="Homme">
+                    <label for="sex"> Homme </label>
+                </p>
+                <p>
+                    <label for="nom">Nom : </label>
+                    <input type="text">
+                    <label for="nom">Prénom : </label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="pseudo">Pseudo : </label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="age">Age : </label>
+                    <input type="number">
+                </p>
+                <p>
+                    <label for="password">Mot de passe : </label>
+                    <input type="password" name="" id="password">
+                </p>
+                <p>
+                    <label for="comment">Commentaire : </label><br>
+                    <textarea name="comment" id="" cols="45" rows="10"></textarea>
+                </p>
+                <p>
+                    <label for="pays" nom="pays">Pays</label>
+                    <select name="pays" id="pays">
+                        <option value="France" selected>France</option>
+                        <option value="Espagne">Espagne</option>
+                    </select>
+                </p>
+                Souhaitez vous être contacté par email :
+                <input type="radio" value="oui">
+                <label for="contactchoice">Oui</label>
+                <input type="radio" value="non">
+                <label for="contactchoice">Non</label><br>
+                Si oui, Email :
+                <input type="email" size="50"><br>
+                <input type="submit" value="Valider">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

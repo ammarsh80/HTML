@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <form action="" method="post">
+                <p> Sexe:
+                    <input type="radio" name="sex" id="sex">
+                    <label for="sex">H</label>
+                    <input type="radio" name="sex" id="sex">
+                    <label for="sex">F</label>
+                </p>
+                <p>
+                    <label for="nom">Nom : </label>
+                    <input type="text" name="nom" id="nom" min="2" maxlength="25">
+                </p>
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" id="prenom" min="2" maxlength="25">
+                </p>
+                <p>
+                    <label for="aga">Age :</label>
+                    <input type="number" name="age" id="age" min="18" max="120">
+                </p>
+                <p>
+                    <label for="pasudo">Pseudo :</label>
+                    <input type="text" name="pseudo" id="pseudo" min="4" max="15">
+                </p>
+                <p>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" name="password" id="password" min="6" max="6" aria-hidden="true">
+                </p>
+                <p>
+                    <label for="comment">Commentaire :</label><br>
+                    <textarea name="comment" id="comment" cols="25" rows="6"></textarea>
+                </p>
+
+                <p>Pays : <br>
+                    <input type="checkbox" name="France" id="France" checked>
+                    <label for="France">France</label><br>
+                    <input type="checkbox" name="Espagne" id="Espagne" checked>
+                    <label for="Espagne">Espagne</label><br>
+                    <input type="checkbox" name="Allemagne" id="Allemagne">
+                    <label for="Allemagne">Allemagne</label><br>
+                    <input type="checkbox" name="Italie" id="Italie">
+                    <label for="Italie">Italie</label><br>
+                    <input type="checkbox" name="Portugal" id="Portugal">
+                    <label for="Portugal">Portugal</label>
+                    </select>
+                </p>
+                <p>Voulez-vous recevoir des mails ?
+                    <input type="radio" name="souhait" id="souhait">
+                    <label for="souhait">Oui</label>
+                    <input type="radio" name="souhait" id="souhait">
+                    <label for="souhait">Non</label>
+
+                </p>
+                <div>
+                    <input type="submit" value="Validez">
+                </div>
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>
